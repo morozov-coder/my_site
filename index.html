@@ -10,9 +10,30 @@
   <title>Document</title>
 </head>
 <body>
+  <div class="main-navigation">
+    <nav class="navigation fixed-navigation">
+      <a href="" class="logo">
+        <img src="img/logo.png" alt="">
+        <span class="logo-text">SCANDI</span>
+      </a>
+
+      <ul class="menu-list">
+        <li class="menu-item"><a href="#about">О компании</a></li>
+        <li class="menu-item"><a href="#projects">Портфолио</a></li>
+        <li class="menu-item"><a href="#team">Команда</a></li>
+        <li class="menu-item"><a href="#capability">Как мы работаем</a></li>
+        <li class="menu-item"><a href="#review">Отзывы клиентов</a></li>
+        <li class="menu-item"><a href="#callback">Оставить заявку</a></li>
+      </ul>
+
+      <span class="tel">+7 (981) 857-46-24</span>
+  
+    </nav>
+  </div> 
+
   <header class="page_header">
     <nav class="navigation">
-      
+
       <a href="" class="logo">
         <img src="img/logo.png" alt="">
         <span class="logo-text">SCANDI</span>
@@ -36,7 +57,7 @@
         <p class="context">Подбираем текстиль, мебель и аксессуары
           под ваш интерьер, находим магазины
           и помогаем организовать доставку </p>
-        <button class="button button-callback">Оставить заявку</button>
+        <button class="button button-callback"><a href="#callback">Оставить заявку</a></button>
       </div>
     </div>
   </header> 
@@ -221,7 +242,7 @@
   
             <button class="button button-callback">Оставить заявку</button>
           </form>
-          <img class="callback-image" src="img/callback/img-1.png" alt="">
+          <div class="callback-image"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123918!2d30.320894615957418!3d59.938796869048026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1615466472278!5m2!1sru!2sby" width="600" height="600" style="border:0; padding: 0;" allowfullscreen="" loading="lazy"></iframe></div>
         </div>  
       </div>
     </section>
@@ -236,5 +257,15 @@
       <span class="copyright">ИП Королёва А.А.</span>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('scroll', () => {
+    if (window.scrollY >= window.innerHeight) {
+    document.querySelector('.main-navigation').classList.add('scrolled');
+    } else {
+    document.querySelector('.main-navigation').classList.remove('scrolled');
+    }
+    })
+</script>   
 </body>
 </html>
