@@ -12,17 +12,19 @@
 <body>
   <header class="page_header">
     <nav class="navigation">
-      <div class="logo">
-        <span class="logo">SCANDI</span>
-      </div>
+      
+      <a href="" class="logo">
+        <img src="img/logo.png" alt="">
+        <span class="logo-text">SCANDI</span>
+      </a>
 
       <ul class="menu-list">
-        <li class="menu-item"><a href="">О компании</a></li>
-        <li class="menu-item"><a href="">Портфолио</a></li>
-        <li class="menu-item"><a href="">Команда</a></li>
-        <li class="menu-item"><a href="">Как мы работаем</a></li>
-        <li class="menu-item"><a href="">Отзывы клиентов</a></li>
-        <li class="menu-item"><a href="">Оставить заявку</a></li>
+        <li class="menu-item"><a href="#about">О компании</a></li>
+        <li class="menu-item"><a href="#projects">Портфолио</a></li>
+        <li class="menu-item"><a href="#team">Команда</a></li>
+        <li class="menu-item"><a href="#capability">Как мы работаем</a></li>
+        <li class="menu-item"><a href="#review">Отзывы клиентов</a></li>
+        <li class="menu-item"><a href="#callback">Оставить заявку</a></li>
       </ul>
 
       <span class="tel">+7 (981) 857-46-24</span>
@@ -39,7 +41,7 @@
     </div>
   </header> 
   <main>
-    <section class="page_section section-1">
+    <section class="page_section section-1" id="about">
       <div class="wrapper">
         
         <h2 class="section-title">О нас</h2>
@@ -76,7 +78,7 @@
       </div>
     </section>
       
-    <section class="section-2 page_section">
+    <section class="section-2 page_section" id="projects">
       <div class="wrapper">
         <h2 class="section-title">Наши работы</h2>
         <article class="projects">
@@ -123,7 +125,7 @@
       </div>
     </section>
 
-    <section class="page_section section-3">
+    <section id="team" class="page_section section-3">
       <div class="wrapper">
         <h2 class="section-title">Команда</h2>
         <div class="team-container">
@@ -149,7 +151,7 @@
         
         
       </div>
-      <h2 class="section-title">Как мы работаем</h2>
+      <h2 id="capability" class="section-title">Как мы работаем</h2>
         <div class="team-container">
           <article class="capability">
             <div class="point">1</div>
@@ -173,7 +175,7 @@
           </article>
         </div>
     </section>
-    <section class="page_section section-4">
+    <section class="page_section section-4" id="review">
       <div class="wrapper">
         <h2 class="section-title">Отзывы</h2>
         
@@ -206,7 +208,7 @@
         
       </div>
     </section>
-    <section class="page_section section-5">
+    <section class="page_section section-5" id="callback">
       <div class="wrapper">
         <div class="callback">
           <form action="" class="form-callback">
@@ -214,8 +216,8 @@
             <p>Оставьте свои контакты. Менеджер перезвонит
               в удобное вам время и ответит на все вопросы.</p>
   
-            <input type="text" placeholder="Ваше имя" id="name">
-            <input type="tel" placeholder="Введите телефон" id="tel">
+            <input type="text" required placeholder="Ваше имя" id="name">
+            <input type="tel" required placeholder="Введите телефон" id="tel">
   
             <button class="button button-callback">Оставить заявку</button>
           </form>
