@@ -4,6 +4,7 @@
     font-family: 'Montserrat-regular', sans-serif;
     font-weight: normal;
     color: #533738;
+    overflow-x: hidden;
   }
   
   p {
@@ -18,8 +19,9 @@
   
   h2 {
     line-height: 50px;
-    font-size: 40px;
     text-transform: uppercase;
+    font-weight: normal;
+    font-size: 40px;
   }
   
   a {
@@ -40,7 +42,6 @@
   }
   
   .navigation {
-    z-index: 1;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     padding: 35px 100px;
@@ -59,8 +60,8 @@
   
   
   .fixed-navigation {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    position: relative;
+    top: -10px;
   }
   
   .main-navigation.scrolled {
@@ -69,6 +70,8 @@
   
   .logo {
     margin: auto 0;
+    display: flex;
+    align-items: baseline;
   }
   
   .logo-text {
@@ -162,8 +165,7 @@
   .section-title {
     margin: 0;
     margin-bottom: 30px;
-    font-weight: normal;
-    font-style: 40px;
+    
   }
   
   .container {
@@ -183,7 +185,6 @@
     margin: 0;
     padding: 0;
     width: 450px;
-    align-self: flex-start;
   }
   
   .progress {
@@ -270,22 +271,27 @@
     padding: 0;
     text-align: center;
     font-size: 30px;
+    margin: 0 100px;
+    margin-bottom: 20px;
     line-height: auto;
-    padding: 100px;
-    padding-bottom: 50px;
+    font-weight: 500;
+    
   }
   
   .overlay p{
     margin: 0;
     padding: 0;
-    text-align: center;
-    padding: 0 100px;
+    text-align: left;
     font-size: 18px;
-    font-weight: 500;
+    margin: 0 35px;
+    font-weight: normal;
   }
   
   .project-item:hover > .overlay{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .show_more {
@@ -339,8 +345,9 @@
   }
   
   .capability {
+    
     width: 285px;
-    align-items: center;
+    height: auto;
   }
 
   .point {
@@ -484,12 +491,35 @@
     background-color: #CC8B86;
   }
   
-  .button.button-callback a {
+  a.button {
     display: block;
     width: 300px;
     height: 70px;
     position: relative;
-    top: 20px;
   }
 
-  
+  a.button div{
+    position: relative;
+    top: 30%;
+    left: 70px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      margin: 0 50px;
+    }
+
+    .section-2 .wrapper {
+      margin: 0 25px;
+    }
+
+    .menu-item {
+      display: none;
+    }
+
+    .navigation {
+      padding: 35px 25px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+  }
